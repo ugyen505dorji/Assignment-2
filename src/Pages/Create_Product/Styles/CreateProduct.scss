@@ -1,0 +1,50 @@
+//Defining Colors Pallets
+$primaryColor: orangered;
+$secondaryColor: orange;
+
+$primaryTextColor: rgb(0, 0, 0);
+$secondaryTextColor: rgb(53, 48, 48);
+
+$primaryHeadingFontWeight: 800;
+$secondaryHeadiningFontWeight: 400;
+$letterSpacing: 1.5px;
+
+.product-form {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  form {
+    width: 550px;
+    height: 700px;
+    border: 2px solid $secondaryColor;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    h2 {
+      font-size: 30px;
+      color: $secondaryTextColor;
+    }
+    input {
+      padding: 10px 10px;
+      width: 60%;
+      text-align: start;
+      font-size: 20px;
+      border: 2px $secondaryColor solid;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 25px;
+      color: white;
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      border-radius: 24px;
+      border: 2px solid $primaryColor;
+      margin-top: 80px;
+      text-align: center;
+    }
+  }
+}
