@@ -1,0 +1,58 @@
+//Defining Colors Pallets
+$primaryColor: orangered;
+$secondaryColor: orange;
+
+$primaryTextColor: rgb(0, 0, 0);
+$secondaryTextColor: rgb(53, 48, 48);
+
+$primaryHeadingFontWeight: 800;
+$secondaryHeadiningFontWeight: 400;
+$letterSpacing: 1.5px;
+
+main {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .filter {
+    font-size: 30px;
+    color: $secondaryTextColor;
+    border: none;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $secondaryColor;
+  }
+  .product {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid $secondaryColor;
+    overflow: hidden;
+    padding: 2px;
+
+    img {
+      object-fit: fill;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-top: 4px;
+    }
+  }
+}

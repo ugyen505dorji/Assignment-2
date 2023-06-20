@@ -1,0 +1,47 @@
+main {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .filter {
+  font-size: 30px;
+  color: rgb(53, 48, 48);
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid orange;
+}
+main .product {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+main .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  border: 2px solid orange;
+  overflow: hidden;
+  padding: 2px;
+}
+main .card img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-bottom: 10px;
+}
+main .card h3 {
+  margin-top: 4px;
+}/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,41 @@
+//Defining Colors Pallets
+$primaryColor: orangered;
+$secondaryColor: orange;
+
+$primaryTextColor: rgb(0, 0, 0);
+$secondaryTextColor: rgb(53, 48, 48);
+
+$primaryHeadingFontWeight: 800;
+$secondaryHeadiningFontWeight: 400;
+$letterSpacing: 1.5px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 2px solid $primaryColor;
+  .logo-text {
+    font-size: 25px;
+    font-weight: $primaryHeadingFontWeight;
+    span {
+      color: $primaryColor;
+    }
+  }
+  .logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    li {
+      list-style-type: none;
+      font-size: 23px;
+      font-weight: $secondaryHeadiningFontWeight;
+    }
+  }
+}
