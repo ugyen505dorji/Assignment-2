@@ -1,8 +1,14 @@
 import React from "react";
 import "./Styles/NavBar.css";
 import Logo from "../../Assets/spark.png";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
+  let nav = useNavigate();
+  let path = ["/", "/createProduct", "/cart"];
+  function handleClick(index: number) {
+    nav(path[index]);
+  }
   return (
     <header className="main-header">
       <div className="logo-section">
@@ -19,9 +25,15 @@ function NavBar() {
       </div>
       <div className="nav-bar">
         <ul className="nav-section">
-          <li className="nav-element">All Product</li>
-          <li className="nav-element">Create Product</li>
-          <li className="nav-element">Your Cart</li>
+          <li className="nav-element" onClick={() => handleClick(0)}>
+            All Product
+          </li>
+          <li className="nav-element" onClick={() => handleClick(1)}>
+            Create Product
+          </li>
+          <li className="nav-element" onClick={() => handleClick(2)}>
+            Your Cart
+          </li>
         </ul>
       </div>
     </header>
