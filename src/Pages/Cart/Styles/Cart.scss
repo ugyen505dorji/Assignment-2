@@ -1,0 +1,48 @@
+//Defining Colors Pallets
+$primaryColor: orangered;
+$secondaryColor: orange;
+
+$primaryTextColor: rgb(0, 0, 0);
+$secondaryTextColor: rgb(53, 48, 48);
+
+$primaryHeadingFontWeight: 800;
+$secondaryHeadiningFontWeight: 400;
+$letterSpacing: 1.5px;
+
+.cart-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  .card {
+    height: 60%;
+    width: 500px;
+    border: 2px solid $primaryColor;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    img {
+      object-fit: fill;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: $secondaryHeadiningFontWeight;
+      text-align: center;
+    }
+    .delete {
+      font-size: 18px;
+      color: white;
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      border-radius: 24px;
+      border: 2px solid $primaryColor;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

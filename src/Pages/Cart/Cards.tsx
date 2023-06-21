@@ -6,7 +6,7 @@ function Cards() {
         alt="Product Image"
         className="product-image"
         width={"100%"}
-        height={"85%"}
+        height={"70%"}
       />
       <h3 className="title">Apple IPhone</h3>
       <h3 className="price">$ 229</h3>
@@ -15,6 +15,7 @@ function Cards() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere est
         necessitatibus modi iste. Possimus tempora minus facilis omni
       </p>
+      <button className="delete">Remove from Cart</button>
     </div>
   );
 }
