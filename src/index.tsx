@@ -5,6 +5,7 @@ import NavBar from "./Components/Nav/NavBar";
 import Home from "./Pages/Home/Home";
 import CreateProduct from "./Pages/Create_Product/CreateProduct";
 import Cart from "./Pages/Cart/Cart";
+import Detail from "./Pages/Detail/Detail";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,7 +16,8 @@ root.render(
       <NavBar />
       {/* <Home /> */}
       {/* <CreateProduct /> */}
-      <Cart />
+      {/* <Cart /> */}
+      <Detail />
     </>
   </React.StrictMode>
 );
